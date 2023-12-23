@@ -6,6 +6,7 @@ const targets = document.querySelectorAll(".target");
 
 targets.forEach((target) => {
     target.addEventListener("mousedown", (e) => {
+       target.style.backgroundColor = "red";
         if (e.button === 0) {
             if (selectedElement === null) {
                 selectedElement = target;
