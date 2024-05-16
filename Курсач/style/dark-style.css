@@ -54,6 +54,9 @@ html {
     margin-bottom: 266px;
 }
 
+.header__theme-burger{
+  padding: 2px 100px;
+}
 .introduction__button {
     display: flex;
     align-items: center;
@@ -866,6 +869,10 @@ html {
   line-height: 17px;
   margin-top: 5px;
   padding: 2px 8px;
+}
+
+.header__theme-burger{
+  padding: 2px 20px;
 }
 .footer__container, .footer__links{
   display: flex;
