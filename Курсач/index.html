@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/dark-style.css" id="theme">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+            <nav class="header__navbar">
+                <a href="#" class="header__logo">Movi<span class="header__logo-span">x.</span></a>
+                <ul class="header__nav">
+                    <li class="nav__item">
+                        <a href="#cinema" class="nav__link link">Что посмотреть</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reviewsId" class="nav__link link">Лучшие обзоры</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link link">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="reviews.html" class="nav__link link">Обзоры</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__dropdown">
+                    <button class="header__button">Тёмная
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 8L0.669872 0.5L9.33013 0.5L5 8Z" fill="#D9D9D9"/>
+                            </svg>                        
+                    </button>
+                    <div class="header__dropdown-content">
+                        <button id="switchMode" class="glow-on-hover header__theame">Светлая</button>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <div class="menu__box">
+        <a href="#" class="header__logo">Movi<span class="header__logo-span">x.</span></a>
+        <ul class="menu__items">
+          <li><a class="menu__item" href="#cinema">Что посмотреть</a></li>
+          <li><a class="menu__item" href="#reviewsId">Лучшие обзоры</a></li>
+          <li><a class="menu__item" href="#about">О нас</a></li>
+          <li><a class="menu__item" href="news/news.html">Новости</a></li>
+          <li><a class="menu__item" href="reviews/reviews.html">Обзоры</a></li>
+        </ul>
+        <address class="footer__items">
+          <a href="mailto:edjvndj@gmail.com" class="footer__contact">edjvndj@gmail.com</a>
+          <a href="tel:+375297653902" class="footer__contact">+375 29 765 39 02</a>
+          <a href="https://yandex.by/maps/-/CDbEeIJH" class="footer__contact">Петруся Бровки, 4</a>
+        </address>
+      </div>
+      </div>
+  </header>
+  <main>
+    <section class="introduction container">
+      <div class="introduction__container">
+        <h1 class="introduction__title">ОППЕНГЕЙМЕР</h1>
+        <h1 class="introduction__title">БАРБИ</h1>
+        <div class="introduction__items">
+
+          <figure class="introduction__poster-wrap">
+            <img src="images/poster-1.png" alt="" class="introduction__poster">
+            <img src="images/poster-2.png" alt="" class="introduction__poster">
+          </figure>
+
+        
+          <div class="introduction__content">
+            <div class="introduction__button-container">
+              <button class="introduction__button block glow">
+                <img src="images/play.svg" alt="">
+                <span class="introduction__button-text">Смотреть</span>
+                <span class="introduction__button-shimmer"></span>
+              </button>
+              </div>
+            <p class="introduction__description">История жизни американского физика Роберта Оппенгеймера, который стоял во главе первых разработок ядерного оружия.</p>
+            <p class="introduction__description">Барби выгоняют из Барбиленда, потому что она не соответствует его нормам красоты. Тогда она начинает новую жизнь в реальном мире, где обнаруживает, что совершенства можно достичь только благодаря внутренней гармонии.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="cinema" class="cinema container">
+      <h2 class="cinema__title">ЧТО ПОСМОТРЕТЬ В КИНО</h2>
+      <div class="slider">
+  
+        <button class="slide-button" data-target="slide-1">1</button>
+        <button class="slide-button" data-target="slide-2">2</button>
+        <button class="slide-button" data-target="slide-3">3</button>
+        <button class="slide-button" data-target="slide-4">4</button>
+        <button class="slide-button" data-target="slide-5">5</button>
+      
+        <div class="slides">
+          <div class="slides__slide" id="slide-1">
+          <figure class="swipper__img-wrap">
+            <img src="images/cinema1.jpg" alt="" class="swipper__img">
+          </figure>
+          <h3 class="swipper__title">Дюна: часть вторая</h3>
+          <p class="swipper__janre">Фантастика, драма, боевик</p>
+          <button class="swipper__button glow-on-hover">Смотреть</button>
+          </div>
+          <div class="slides__slide" id="slide-2">
+          <figure class="swipper__img-wrap">
+            <img src="images/cinema2.jpg" alt="" class="swipper__img">
+          </figure>
+          <h3 class="swipper__title">Мастер и Маргарита</h3>
+          <p class="swipper__janre">Фэнтэзи, драма</p>
+          <button class="swipper__button glow-on-hover">Смотреть</button>
+          </div>
+          <div class="slides__slide" id="slide-3">
+          <figure class="swipper__img-wrap">
+            <img src="images/cinema3.jpg" alt="" class="swipper__img">
+          </figure>
+          <h3 class="swipper__title">Мальчик и птица</h3>
+          <p class="swipper__janre">Анимация, драма</p>
+          <button class="swipper__button glow-on-hover">Смотреть</button>
+          </div>
+          <div class="slides__slide" id="slide-4">
+          <figure class="swipper__img-wrap">
+            <img src="images/cinema4.jpg" alt="" class="swipper__img">
+          </figure>
+          <h3 class="swipper__title">Онегин</h3>
+          <p class="swipper__janre">Мелодрама</p>
+          <button class="swipper__button glow-on-hover">Смотреть</button>
+          </div>
+          <div class="slides__slide" id="slide-5">
+          <figure class="swipper__img-wrap">
+            <img src="images/cinema5.jpg" alt="" class="swipper__img">
+          </figure>
+          <h3 class="swipper__title">Одна жизнь</h3>
+          <p class="swipper__janre">Драма</p>
+          <button class="swipper__button glow-on-hover">Смотреть</button>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="reviewsId" class="selection container">
+      <h2 class="selection__title">ЛУЧШИЕ ОБЗОРЫ</h2>
+      
+      <div class="selection__items">
+        <article class="selection__item" onclick="openArticle('review_club.html')">
+          <figure class="selection__img-wrap">
+            <img src="images/review1.jpg" alt="" class="selection__img">
+          </figure>
+          <div class="selection__info">
+            <h3 class="selection__film">Бойцовский клуб</h3>
+            <p class="selection__description">Терзаемый хронической бессонницей и отчаянно пытающийся вырваться из мучительно скучной жизни клерк встречает некоего Тайлера Дардена, харизматического торговца мылом с извращенной философией. Тайлер уверен, что самосовершенствование — удел слабых, а саморазрушение — единственное, ради чего стоит жить.</p>
+          </div>
+          <p class="selection__estimate"><svg class="selection__mark" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#E50914"/>
+            </svg>
+            9,0</p>
+        </article>
+
+        <article class="selection__item">
+          <figure class="selection__img-wrap">
+            <img src="images/review2.jpg" alt="" class="selection__img">
+          </figure>
+          <div class="selection__info">
+            <h3 class="selection__film">Бригада</h3>
+            <p class="selection__description">Это история четырех друзей детства, обычных московских парней, Саши Белого, Космоса, Пчелы и Фила, выросших в одном дворе. Друзья решили немного подзаработать, но незапланированное убийство вмиг перемешало все задуманное, поставив на кон их жизни. Ставка слишком высока, но отступать некуда.</p>
+          </div>
+          <p class="selection__estimate"><svg class="selection__mark" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#E50914"/>
+            </svg>
+            8,7</p>
+        </article>
+
+        <article class="selection__item">
+          <figure class="selection__img-wrap">
+            <img src="images/review3.jpeg" alt="" class="selection__img">
+          </figure>
+          <div class="selection__info">
+            <h3 class="selection__film">Рататуй</h3>
+            <p class="selection__description">Крыс Реми обладает уникальным вкусом. Он готов рисковать собственной жизнью, чтобы посмотреть любимое кулинарное шоу и раздобыть какую-нибудь приправку или просто свежий продукт. Когда Реми случайно попадает на кухню шикарного ресторана, он решает воспользоваться выпавшим ему шансом и проверить свои навыки.</p>
+          </div>
+          <p class="selection__estimate"><svg  width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#E50914"/>
+            </svg>
+            8,8</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="team container">
+      <h2 class="team__title">О НАС</h2>
+
+      <div class="team__content">
+        <div class="team__info">
+          <p class="team__text">Мы работаем в сфере обзоров фильмов уже 7 лет, и за это время накопили огромный опыт. Наши эксперты в области кинематографа – настоящие профессионалы, которые с большой страстью и любовью создают для вас качественные обзоры.</p>
+          <p class="team__text">Одной из ключевых фигур в нашей команде является Бердник Полина, гениальная создательница нашего ресурса. Ее страсть к кино и талант в создании обзоров делают ее неотъемлемой частью нашей команды. Она постоянно старается доставить вам самую полезную и интересную информацию о фильмах.</p>
+          <p class="team__text">Кроме Полины, в нашей команде также действуют два других выдающихся обзорщика - Штайда Мария и Падунович Мария. Они вместе с Полиной работают над тем, чтобы каждый обзор был высококачественным и содержательным, чтобы вы могли получить максимум удовольствия от чтения нашего контента.</p>
+          <p class="team__text">Мы гордимся тем, что сотни тысяч читателей доверяют нам и нашим обзорам. Мы стремимся быть вашим надежным источником информации о фильмах, помогая вам принимать взвешенные решения о том, какие фильмы стоит посмотреть.</p>
+        </div>
+
+        <figure class="team__img-wrap">
+          <img src="images/team.jpg" alt="" class="team__img">
+          <figcaption class="team__author">Бердник Полина</figcaption>
+        </figure>
+      </div>
+      <p class="team__text">Благодарим вас за посещение нашего сайта и надеемся, что вам понравятся наши обзоры. Приятного чтения и приятного просмотра!</p>
+    </section>
+
+    <section class="form container">
+      <form class="form__form">
+        <h2 class="form__title">Есть пожелания по обзору? Напиши нам!</h2>
+        <div class="form__box">
+          <input type="text" class="form__input" placeholder="Имя">
+          <select class="form__select form__input">
+            <option value="" class="form__choise">Фильм</option>
+            <option value="" class="form__choise">Сериал</option>
+            <option value="" class="form__choise">Мультфильм</option>
+            <option value="" class="form__choise">Аниме</option>
+          </select>
+          <input type="text" class="form__input" placeholder="Название">
+          <button class="form__button glow-on-hover">ОТПРАВИТЬ</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__info">
+        <a href="#" class="footer__logo">Movi<span class="footer__logo-span">x.</span></a>
+        <p class="footer__description">Lorem ipsum dolor sit amet consectetur. Risus mauris sem </p>
+        <div class="footer__links">
+          <a href="" class="footer__link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.52203C0 2.47719 2.47719 0 5.52203 0H14.478C17.5229 0 20 2.47719 20 5.52203V14.478C20 17.5229 17.5229 20 14.478 20H5.52203C2.47719 20 0 17.5229 0 14.478V5.52203ZM6.02914 10C6.02914 12.1895 7.81048 13.9709 10 13.9709C12.1895 13.9709 13.9709 12.1895 13.9709 10C13.9709 7.81048 12.1895 6.02915 10 6.02915C7.81048 6.02915 6.02914 7.81048 6.02914 10ZM4.74211 10C4.74211 7.10074 7.10074 4.74211 10 4.74211C12.8993 4.74211 15.2579 7.10074 15.2579 10C15.2579 12.8993 12.8993 15.2579 10 15.2579C7.10074 15.2579 4.74211 12.8993 4.74211 10ZM16.4048 2.12093C17.167 2.12093 17.7848 2.73881 17.7848 3.50099C17.7848 4.2632 17.167 4.88107 16.4048 4.88107C15.6426 4.88107 15.0247 4.2632 15.0247 3.50099C15.0247 2.73881 15.6426 2.12093 16.4048 2.12093Z" fill="#C5C5C5"/>
+              </svg>                        
+          </a>
+  
+          <a href="" class="footer__link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.619 0H2.38095C1.0681 0 0 1.0681 0 2.38095V17.619C0 18.9319 1.0681 20 2.38095 20H17.619C18.9319 20 20 18.9319 20 17.619V2.38095C20 1.0681 18.9319 0 17.619 0ZM15.7171 8.72524C15.609 8.73524 15.4995 8.7419 15.3886 8.7419C14.1395 8.7419 13.0419 8.09952 12.4033 7.12857C12.4033 9.67571 12.4033 12.5738 12.4033 12.6224C12.4033 14.8648 10.5852 16.6829 8.34286 16.6829C6.10048 16.6829 4.28238 14.8648 4.28238 12.6224C4.28238 10.38 6.10048 8.5619 8.34286 8.5619C8.42762 8.5619 8.51048 8.56952 8.59381 8.57476V10.5757C8.51048 10.5657 8.42857 10.5505 8.34286 10.5505C7.1981 10.5505 6.27048 11.4781 6.27048 12.6229C6.27048 13.7676 7.1981 14.6952 8.34286 14.6952C9.48762 14.6952 10.4986 13.7933 10.4986 12.6486C10.4986 12.6033 10.5186 3.3181 10.5186 3.3181H12.431C12.611 5.0281 13.9914 6.37762 15.7171 6.50143V8.72524Z" fill="#C5C5C5"/>
+              </svg>                                                
+          </a>
+  
+          <a href="" class="footer__link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 0C15.523 0 20 4.47696 20 10C20 15.523 15.523 20 10 20C4.47696 20 0 15.523 0 10C0 4.47696 4.47696 0 10 0ZM13.4496 14.0761C13.6335 13.5117 14.4952 7.88739 14.6017 6.77913C14.6339 6.44348 14.5278 6.22043 14.32 6.12087C14.0687 6 13.6965 6.06044 13.2648 6.21609C12.6726 6.42957 5.10217 9.64391 4.66478 9.83C4.25 10.0061 3.85783 10.1983 3.85783 10.4765C3.85783 10.6722 3.97391 10.7822 4.29391 10.8965C4.62696 11.0152 5.46565 11.2696 5.96087 11.4061C6.43783 11.5378 6.98087 11.4235 7.28522 11.2343C7.60783 11.0339 11.3309 8.54261 11.5983 8.32435C11.8652 8.10609 12.0783 8.38565 11.86 8.60435C11.6417 8.82261 9.08609 11.303 8.74913 11.6465C8.34 12.0635 8.63043 12.4957 8.90478 12.6687C9.21826 12.8661 11.4726 14.3783 11.8122 14.6209C12.1517 14.8635 12.4961 14.9735 12.8113 14.9735C13.1265 14.9735 13.2926 14.5583 13.4496 14.0761Z" fill="#C5C5C5"/>
+              </svg>                                                                       
+          </a>
+  
+          <a href="" class="footer__link">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 1.89389C19.2639 2.21572 18.4731 2.4323 17.6432 2.52998C18.4908 2.0302 19.1408 1.23887 19.4469 0.295329C18.6547 0.758011 17.7762 1.09423 16.8409 1.27597C16.0925 0.4907 15.0263 0 13.8464 0C11.5803 0 9.74347 1.80908 9.74347 4.03919C9.74347 4.35572 9.78039 4.66468 9.84962 4.95925C6.43975 4.79114 3.41679 3.18273 1.39225 0.738322C1.03996 1.33504 0.83766 2.02868 0.83766 2.77003C0.83766 4.17095 1.56148 5.40754 2.66221 6.13148C1.98992 6.11027 1.35687 5.92853 0.803815 5.62639C0.803815 5.64381 0.803815 5.65971 0.803815 5.67713C0.803815 7.63462 2.21761 9.26726 4.09523 9.63756C3.75139 9.72994 3.38833 9.77917 3.01373 9.77917C2.74989 9.77917 2.49221 9.75342 2.24222 9.70723C2.76451 11.3118 4.27984 12.4803 6.07515 12.5128C4.67136 13.5965 2.9022 14.2424 0.979193 14.2424C0.648437 14.2424 0.321526 14.2235 0 14.1856C1.81608 15.3313 3.97216 16 6.28976 16C13.8372 16 17.9632 9.84505 17.9632 4.50717C17.9632 4.33224 17.9593 4.15808 17.9516 3.98467C18.7539 3.41445 19.45 2.70339 20 1.89389Z" fill="#C5C5C5"/>
+              </svg>                                                                        
+          </a>
+        </div>
+        <div class="footer__links">
+          <a href="" class="footer__link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.52203C0 2.47719 2.47719 0 5.52203 0H14.478C17.5229 0 20 2.47719 20 5.52203V14.478C20 17.5229 17.5229 20 14.478 20H5.52203C2.47719 20 0 17.5229 0 14.478V5.52203ZM6.02914 10C6.02914 12.1895 7.81048 13.9709 10 13.9709C12.1895 13.9709 13.9709 12.1895 13.9709 10C13.9709 7.81048 12.1895 6.02915 10 6.02915C7.81048 6.02915 6.02914 7.81048 6.02914 10ZM4.74211 10C4.74211 7.10074 7.10074 4.74211 10 4.74211C12.8993 4.74211 15.2579 7.10074 15.2579 10C15.2579 12.8993 12.8993 15.2579 10 15.2579C7.10074 15.2579 4.74211 12.8993 4.74211 10ZM16.4048 2.12093C17.167 2.12093 17.7848 2.73881 17.7848 3.50099C17.7848 4.2632 17.167 4.88107 16.4048 4.88107C15.6426 4.88107 15.0247 4.2632 15.0247 3.50099C15.0247 2.73881 15.6426 2.12093 16.4048 2.12093Z" fill="#121212"/>
+              </svg>
+                                         
+            </a>
+  
+          <a href="" class="footer__link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.619 0H2.38095C1.0681 0 0 1.0681 0 2.38095V17.619C0 18.9319 1.0681 20 2.38095 20H17.619C18.9319 20 20 18.9319 20 17.619V2.38095C20 1.0681 18.9319 0 17.619 0ZM15.7171 8.72524C15.609 8.73524 15.4995 8.7419 15.3886 8.7419C14.1395 8.7419 13.0419 8.09952 12.4033 7.12857C12.4033 9.67571 12.4033 12.5738 12.4033 12.6224C12.4033 14.8648 10.5852 16.6829 8.34286 16.6829C6.10048 16.6829 4.28238 14.8648 4.28238 12.6224C4.28238 10.38 6.10048 8.5619 8.34286 8.5619C8.42762 8.5619 8.51048 8.56952 8.59381 8.57476V10.5757C8.51048 10.5657 8.42857 10.5505 8.34286 10.5505C7.1981 10.5505 6.27048 11.4781 6.27048 12.6229C6.27048 13.7676 7.1981 14.6952 8.34286 14.6952C9.48762 14.6952 10.4986 13.7933 10.4986 12.6486C10.4986 12.6033 10.5186 3.3181 10.5186 3.3181H12.431C12.611 5.0281 13.9914 6.37762 15.7171 6.50143V8.72524Z" fill="#121212"/>
+              </svg>                                                                          
+          </a>
+  
+          <a href="" class="footer__link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 0C15.523 0 20 4.47696 20 10C20 15.523 15.523 20 10 20C4.47696 20 0 15.523 0 10C0 4.47696 4.47696 0 10 0ZM13.4496 14.0761C13.6335 13.5117 14.4952 7.88739 14.6017 6.77913C14.6339 6.44348 14.5278 6.22043 14.32 6.12087C14.0687 6 13.6965 6.06044 13.2648 6.21609C12.6726 6.42957 5.10217 9.64391 4.66478 9.83C4.25 10.0061 3.85783 10.1983 3.85783 10.4765C3.85783 10.6722 3.97391 10.7822 4.29391 10.8965C4.62696 11.0152 5.46565 11.2696 5.96087 11.4061C6.43783 11.5378 6.98087 11.4235 7.28522 11.2343C7.60783 11.0339 11.3309 8.54261 11.5983 8.32435C11.8652 8.10609 12.0783 8.38565 11.86 8.60435C11.6417 8.82261 9.08609 11.303 8.74913 11.6465C8.34 12.0635 8.63043 12.4957 8.90478 12.6687C9.21826 12.8661 11.4726 14.3783 11.8122 14.6209C12.1517 14.8635 12.4961 14.9735 12.8113 14.9735C13.1265 14.9735 13.2926 14.5583 13.4496 14.0761Z" fill="#121212"/>
+              </svg>
+                                                                                     
+          </a>
+  
+          <a href="" class="footer__link">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 1.89389C19.2639 2.21572 18.4731 2.4323 17.6432 2.52998C18.4908 2.0302 19.1408 1.23887 19.4469 0.295329C18.6547 0.758011 17.7762 1.09423 16.8409 1.27597C16.0925 0.4907 15.0263 0 13.8464 0C11.5803 0 9.74347 1.80908 9.74347 4.03919C9.74347 4.35572 9.78039 4.66468 9.84962 4.95925C6.43975 4.79114 3.41679 3.18273 1.39225 0.738322C1.03996 1.33504 0.83766 2.02868 0.83766 2.77003C0.83766 4.17095 1.56148 5.40754 2.66221 6.13148C1.98992 6.11027 1.35687 5.92853 0.803815 5.62639C0.803815 5.64381 0.803815 5.65971 0.803815 5.67713C0.803815 7.63462 2.21761 9.26726 4.09523 9.63756C3.75139 9.72994 3.38833 9.77917 3.01373 9.77917C2.74989 9.77917 2.49221 9.75342 2.24222 9.70723C2.76451 11.3118 4.27984 12.4803 6.07515 12.5128C4.67136 13.5965 2.9022 14.2424 0.979193 14.2424C0.648437 14.2424 0.321526 14.2235 0 14.1856C1.81608 15.3313 3.97216 16 6.28976 16C13.8372 16 17.9632 9.84505 17.9632 4.50717C17.9632 4.33224 17.9593 4.15808 17.9516 3.98467C18.7539 3.41445 19.45 2.70339 20 1.89389Z" fill="#121212"/>
+              </svg>
+                                                                                       
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer__navigation">
+        <h3 class="footer__navigation-title">Навигация</h3>
+        <nav class="footer__nav">
+          <a href="#cinema" class="footer__nav-link">Что посмотреть</a>
+          <a href="#reviewsId" class="footer__nav-link">Лучшие обзоры</a>
+          <a href="#about" class="footer__nav-link">О нас</a>
+          <a href="news.html" class="footer__nav-link">Новости</a>
+          <a href="reviews.html" class="footer__nav-link">Обзоры</a>
+          <a href="#contacts" class="footer__nav-link">Контакты</a>
+        </nav>
+      </div>
+  
+      <div id="contacts" class="footer__contacts">
+        <h3 class="footer__contacts-title">Контакты</h3>
+  
+        <address class="footer__items">
+          <a href="mailto:edjvndj@gmail.com" class="footer__contact">edjvndj@gmail.com</a>
+          <a href="tel:+375297653902" class="footer__contact">+375 29 765 39 02</a>
+          <a href="https://yandex.by/maps/-/CDbEeIJH" class="footer__contact">Петруся Бровки, 4</a>
+        </address>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    let savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      let theme = document.getElementById('theme');
+      theme.href = savedTheme;
+    }
+    });
+  </script>
+  
+</body>
+</html>
