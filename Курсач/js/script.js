@@ -29,20 +29,18 @@ const buttons = document.querySelectorAll('.slide-button');
         });
     });
 
-    //тема
-// Получаем ссылку на элементы переключателя темы
+
 let switchMode = document.getElementById("switchMode");
+let switchModeburger = document.getElementById("switchModeburger");
 let theme = document.getElementById('theme');
 
-// Проверяем, есть ли сохраненная тема в localStorage
 let savedTheme = localStorage.getItem('theme');
 
-// Если есть сохраненная тема, применяем ее
 if (savedTheme) {
   theme.href = savedTheme;
 }
 
-// Обработчик события клика на переключатель темы
+
 switchMode.onclick = function() {
   if (theme.getAttribute("href") == "style/dark-style.css") {
     theme.href = "style/light-style.css";
@@ -50,9 +48,18 @@ switchMode.onclick = function() {
     theme.href = "style/dark-style.css";
   }
 
-  // Сохраняем выбранную тему в localStorage
   localStorage.setItem('theme', theme.href);
 }
+
+switchModeburger.onclick = function() {
+    if (theme.getAttribute("href") == "style/dark-style.css") {
+      theme.href = "style/light-style.css";
+    } else {
+      theme.href = "style/dark-style.css";
+    }
+  
+    localStorage.setItem('theme', theme.href);
+  }
 
 function changeTheme(){
     let theme = document.getElementById('theme');
