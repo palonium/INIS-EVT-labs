@@ -1,0 +1,65 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 30%;
+    
+    padding: 10px;
+    margin: 10px;
+    background: rgba(16, 233, 215, 0.178);
+  }
+  
+  div {
+    display: flex;
+  }
+  
+  .first {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .second {
+    display: flex;
+    flex-direction: row-reverse; /* Sets to the right side of the box */
+  }
+  
+  .third {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .third > article {
+    width: inherit; /* reinforces the default behavior and sets new width */
+  }
+  
+  .forth {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .forth > div {
+    height: 50%;
+  }
+  

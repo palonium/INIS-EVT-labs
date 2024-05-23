@@ -1,0 +1,146 @@
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+  
+  button {
+    position: relative;
+    margin: 50px;
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    
+    animation: shake 0.5s infinite;
+    transition: 2s;  /* over a period of time */
+    cursor: pointer;
+  }
+  
+  button:hover {
+    animation: none;
+    background-color: rgb(39, 168, 39);
+  }
+  
+  button:active {
+    animation: none;
+    background-color: rgb(17, 136, 17);
+    outline: auto;
+  }
+  
+  a {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: rgb(39, 168, 39);
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(219, 113, 14);
+    transition: opacity 300ms, transform 300ms; /* visibility + movement */
+    opacity: 1;
+    transform: scale(0); /* start value for scale */
+    transform-origin: center;
+  }
+  
+  a:hover::after,
+  a:focus::after { /* click and hover  */
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  div {
+    height: 700px;
+    border-bottom: solid 1px #000;
+  }
+
+  #ball {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    animation: bounce 4s infinite;
+  }
+  
+  @keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-5px);
+    }
+    50% {
+        transform: translate(0);
+    }
+    75% {
+        transform: translate(5px);
+      }
+    100% {
+        transform: translate(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    19% {
+      height: 120px;
+    }
+    20% {
+      top: 590px;
+      height: 60px;
+    }
+    30% {
+      height: 120px;
+    }
+    40% {
+      top: 320px;
+      height: 120px;
+    }
+    59% {
+      height: 120px;
+    }
+    60% {
+      top: 590px;
+      height: 80px;
+    }
+    70% {
+      height: 120px;
+    }
+    80% {
+      top: 400px;
+    }
+    100% {
+      top: 590px;
+    }
+  }
+  

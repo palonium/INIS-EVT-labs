@@ -1,0 +1,83 @@
+/* Шрифты */    
+@font-face {
+    font-family: 'metaflop';
+    src: url(/EVT/fonts/metaflop.ttf);
+}
+
+@font-face {
+    font-family: 'SFPiezolectric';
+    src: url(/EVT/fonts/SFPiezolectricSFXOblique.ttf);
+}
+
+@font-face {
+    font-family: 'caviar-dreams';
+    src: url(/EVT/fonts/caviar-dreams.ttf);
+}
+
+/* Страница */
+body {
+    margin: 0;
+    background-color: #dadadaef;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Текст для контейнеров */
+.drive {
+    font-family: SFPiezolectric;
+    text-align: center;
+}
+
+.seven {
+    font-family: metaflop;
+    text-align: justify;
+}
+
+.hateful8 {
+    font-family: caviar-dreams;
+    text-align: left;
+}
+
+/* Текст */
+h1, h3{
+    text-align: center;
+    margin-top: 3px;
+}
+
+span {
+    font-weight: 500;
+}
+
+/* Картинки */
+img {
+    margin: 10px 30px 10px 0px;
+    width: 310px;
+    height: 300px;
+    border-radius: 7%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+
+th, td {
+    padding: 5px;
+}
+
+/* Якорь */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
