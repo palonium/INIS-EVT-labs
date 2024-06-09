@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/progress.css">
+    <title>umom</title>
+</head>
+<body>
+    <header class="header">
+        <img src="src/images/logo.svg" alt="" class="header__logo">
+
+        <div class="header__info">
+            <a href="mailto:info@umom.studio" class="header__mail">info@umom.studio</a>
+            <a href="https://t.me/dyoma_umom" class="header__link"><img src="src/images/svg/tg.svg" alt=""></a>
+            <button class="header__button">Заказать <svg width="40" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8H20M20 8L13.1034 1M20 8L13.1034 15" stroke="#FCFCFE" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <h2 class="modal__title">Оставьте контакты</h2>
+                    <p class="modal__text">Познакомимся поближе и обсудим проект — свяжемся в течение дня! </p>
+                  <span class="close image__container">
+                    <img src="src/images/close.svg" alt="" class="modal__close default-image element1">
+                    <img src="src/images/hover.svg" alt="" class="modal__close-hover hover-image element2">
+                </span>
+                <ul class="form__links-wrap-modal">
+                    <li>
+                        <a href="https://t.me/dyoma_umom" class="form__link-modal form__link-modal-tg" target="_blank"><img src="src/images/svg/tg.svg" alt="" class="form__icon"></a>
+                    </li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=79043770190" class="form__link-modal form__link-modal-wt" target="_blank"><img src="src/images/svg/wtsup.svg" alt="" class="form__icon"></a>
+                    </li>
+                    <li><a href="mailto:info@umom.studio" class="form__link-modal form__link-modal-ml" target="_blank"><img src="src/images/svg/mail.svg" alt="" class="form__icon"></a>
+                    </li>
+                </ul>
+                <form action="" class="form__form form__modal">
+                    <div class="form__inputs">
+                        <input id="myInput-modal" type="text" class="form__input form__input-modal" placeholder="Имя*" required>
+                        <input id="contactInput-modal" type="text" class="form__input form__input-modal" placeholder="Любой контакт*" required>
+                    </div>
+                    <input id="detailsInput-modal" type="text" class="form__input form__input-info form__input-modal" placeholder="Подробнее про задачу, сроки или любые пожелания" required>
+                    
+                    <div class="form__budjet">
+                        <p class="form__lable">Приблизительный бюджет*</p>
+                        <div class="form__budjet-buttons">
+                            <button class="button form__budjet-button form__button-modal">&lt;100к ₽</button>
+                            <button class="button form__budjet-button form__button-modal">100к — 250к ₽</button>
+                            <button class="button form__budjet-button form__button-modal">&gt;250к ₽</button>
+                            <button class="button form__budjet-button form__button-modal">Пока не знаю</button>
+                        </div>
+                    </div>
+    
+                    <div class="form__project">
+                        <p class="form__lable">Вид проекта*</p>
+                        <div class="form__project-buttons">
+                            <button class="button-project form__project-button form__button-modal">Многостраничный сайт</button>
+                            <button class="button-project form__project-button form__button-modal">Лендинг</button>
+                            <button class="button-project form__project-button form__button-modal">Интернет-магазин</button>
+                            <button class="button-project form__project-button form__button-modal">Другая задача</button>
+                        </div>
+                    </div>
+                    <div class="form__links-wrap">
+                        <a href="https://t.me/dyoma_umom" class="form__link"><img src="src/images/svg/tg.svg" alt="" class="form__icon"></a>
+                        <a href="https://api.whatsapp.com/send/?phone=79043770190" class="form__link"><img src="src/images/svg/wtsup.svg" alt="" class="form__icon"></a>
+                        <a href="mailto:info@umom.studio" class="form__link"><img src="src/images/svg/mail.svg" alt="" class="form__icon"></a>
+                    </div>
+                    <button id="submitButton-modal" class="form__button">Отправить</button>
+    
+                </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="main main__desctop">
+            <div class="main__ofer">
+                <div class="main__information">
+                    <h1 class="main__title animate__animated animate__fadeInUp">Создаем мощный дизайн быстрее, чем нужно</h1>
+                    <p class="main__description">Делаем рабочие и красивые интерфейсы. Любим проптех, строительство и е-коммерс.</p>
+                </div>
+                <div class="main__images">
+                    <img data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear" src="src/images/animate3.png" alt="" class="main__img main__img-small">
+                    <img data-aos="fade-down" data-aos-duration="2000" data-aos-easing="linear" src="src/images/animate2.png" alt="" class="main__img main__img-middle">
+                    <img data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear" src="src/images/animate1.png" alt="" class="main__img main__img-main">
+                </div>
+            </div>
+            <div class="main__info">
+                <p class="main__text">Мы создаем дизайн и продвигаем на рынок <span class="main__hightlight">цифровые продукты</span></p>
+                <div class="main__scroll">
+                    <p class="main__scroll-name">проекты</p>
+                    <a href="#portfolio" class="main__button"><img src="src/images/svg/arrow.svg" alt="" class="main__button-img"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__mobile">
+            <div class="main__information">
+                <h1 class="main__title animate__animated animate__fadeInUp">Создаем мощный дизайн быстрее, чем нужно</h1>
+                <p class="main__description">Делаем рабочие и красивые интерфейсы. Любим проптех, строительство и е-коммерс.</p>
+            </div>
+
+            <div class="main__info">
+                <p class="main__text">Мы создаем дизайн и продвигаем на рынок <span class="main__hightlight">цифровые продукты</span></p>
+                <div class="main__scroll">
+                    <p class="main__scroll-name">проекты</p>
+                    <a href="#portfolio" class="main__button"><img src="src/images/svg/arrow.svg" alt="" class="main__button-img"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <a href="https://dprofile.ru/case/48338/zk-novaia-borovaia-korporativnyi-sait" data-aos="fade-up" class="portfolio__card" target="_blank">
+                <div class="portfolio__img-wrap">
+                    <div class="portfolio__img-container">
+                        <figure class="portfolio__img-wrap">
+                          <img src="src/images/portfolio_1.png" alt="" class="portfolio__img">
+                        </figure>
+                    </div>
+                    <div class="portfolio__tags">
+                        <p class="portfolio__tag">Агрегатор</p>
+                        <p class="portfolio__tag">4 недель</p>
+                    </div>
+                </div>
+                <h3 class="portfolio__title">Жилой комплекс «Новая Боровая»</h3>
+                <p class="portfolio__info">Дизайн сайта-агрегатора с каталогом недвижимости</p>
+            </a>
+
+            <a href="https://dprofile.ru/case/51765/corner-place-korporativnyi-sait" data-aos="fade-up" class="portfolio__card" target="_blank">
+                <div class="portfolio__img-wrap">
+                    <div class="portfolio__img-container">
+                        <figure class="portfolio__img-wrap">
+                          <img src="src/images/portfolio_2.png" alt="" class="portfolio__img">
+                        </figure>
+                    </div>
+                    <div class="portfolio__tags">
+                        <p class="portfolio__tag">Корпоративный сайт</p>
+                        <p class="portfolio__tag">2 недели</p>
+                    </div>
+                </div>
+                <h3 class="portfolio__title">Бизнес-центр «Corner Place»</h3>
+                <p class="portfolio__info">Дизайн сайта нижегородского бизнес-центра</p>
+            </a>
+
+            <a href="https://dprofile.ru/case/35285/onio" data-aos="fade-up" class="portfolio__card" target="_blank">
+                <div class="portfolio__img-wrap">
+                    <div class="portfolio__img-container">
+                        <figure class="portfolio__img-wrap">
+                          <img src="src/images/portfolio_3.png" alt="" class="portfolio__img">
+                        </figure>
+                    </div>
+                    <div class="portfolio__tags">
+                        <p class="portfolio__tag">Корпоративный сайт</p>
+                        <p class="portfolio__tag">3 недели</p>
+                    </div>
+                </div>
+                <h3 class="portfolio__title">Микроконтролеры ONiO</h3>
+                <p class="portfolio__info">Дизайн сайта для стартапа по производству беспроводных микроконтроллеров</p>
+            </a>
+
+            <a href="" data-aos="fade-up" class="portfolio__card" target="_blank">
+                <div class="portfolio__img-wrap">
+                    <div class="portfolio__img-container">
+                        <figure class="portfolio__img-wrap">
+                          <img src="src/images/portfolio_4.png" alt="" class="portfolio__img">
+                        </figure>
+                    </div>
+                    <div class="portfolio__tags">
+                        <p class="portfolio__tag">Интернет-магазин</p>
+                        <p class="portfolio__tag">5 недель</p>
+                    </div>
+                </div>
+                <h3 class="portfolio__title">Магазин кожаных изделий YU MEI</h3>
+                <p class="portfolio__info">Дизайн интернет-магазина с проработкой каталога</p>
+            </a>
+        </section>
+
+        <section class="service">
+            <h2 data-aos="fade-up" class="service__title">С чем поможем</h2>
+            <div class="service__cards">
+                <article data-aos="fade-up" class="service__card">
+                    <div class="service__ofer">
+                        <p class="service__price">от 180к ₽ • от 4 недель</p>
+                        <h3 class="service__name">Многостраничный сайт</h3>
+                    </div>
+                    <p class="service__description">Комплексно закроет все проблемы пользователей. Выбрать квартиру станет проще, чем хлеб в магазине!</p>
+                </article>
+
+                <article data-aos="fade-up" class="service__card">
+                    <div class="service__ofer">
+                        <p class="service__price">от 250к ₽ • от 6 недель</p>
+                        <h3 class="service__name">Интернет-магазин</h3>
+                    </div>
+                    <p class="service__description">Полноценный b2c продукт — сделаем всё, чтобы клиент с удовольствием приобрел ваши товары.</p>
+                </article>
+
+                <article data-aos="fade-up" class="service__card">
+                    <div class="service__ofer">
+                        <p class="service__price">от 100к ₽ • от 2 недель</p>
+                        <h3 class="service__name">Лендинг, промо или простой сайт</h3>
+                    </div>
+                    <p class="service__description">Если нужно решить 1-2 задачи. Быстрые продажи, реклама или продвижение продукта — всё сюда.</p>
+                </article>
+
+                <article data-aos="fade-up" class="service__card">
+                    <div class="service__ofer">
+                        <p class="service__price">0₽ • 40 минут</p>
+                        <h3 class="service__name">Консультация</h3>
+                    </div>
+                    <p class="service__description">Разберем проблемы продукта, из-за которых страдает бизнес. Например, низкие метрики.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="ag-timeline-block">
+            <section class="ag-section">
+              <div class="ag-format-container">
+                <div class="js-timeline ag-timeline">
+                  <div class="js-timeline_line ag-timeline_line">
+                    <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                  </div>
+                  <div class="ag-timeline_list">
+                    <div class="js-timeline_item ag-timeline_item js-ag-active">
+                      <div class="ag-timeline-card_box">
+                        <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                          <div class="ag-timeline-card_point"></div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_item">
+                        <div class="ag-timeline-card_inner">
+                          <div class="ag-timeline-card_info">
+                            <div class="progress__card">
+                                <p class="progress__number">{1}</p>
+                                <h2 class="progress__title">Исследование</h2>
+                                <p class="progress__description">Изучаем рынок, клиентов и текущие метрики продукта. Полностью погружаемся в среду, ставим цели и ищем решения. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_arrow"></div>
+                      </div>
+                    </div>
+    
+                    <div class="js-timeline_item ag-timeline_item js-ag-active">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point"></div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_info">
+                              <div class="progress__card">
+                                  <p class="progress__number">{2}</p>
+                                  <h2 class="progress__title progress__title-second">Проектирование</h2>
+                                  <p class="progress__description">Переносим гипотезы на прототипы, которые начинаем валидировать. Либо убеждаемся в качестве, либо находим и решаем новые проблемы.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+    
+                      <div class="js-timeline_item ag-timeline_item js-ag-active">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point"></div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_info">
+                              <div class="progress__card">
+                                  <p class="progress__number">{3}</p>
+                                  <h2 class="progress__title progress__title-third">Дизайн</h2>
+                                  <p class="progress__description">Осталась «творческая» часть, в которую влюбятся люди. Рисуем интерфейс, иллюстрации, анимации — всё то, что коммуницирует.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+    
+                      <div class="js-timeline_item ag-timeline_item js-ag-active">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point"></div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_info">
+                              <div class="progress__card">
+                                  <p class="progress__number">{4}</p>
+                                  <h2 class="progress__title progress__title-fourth">Разработка</h2>
+                                  <p class="progress__description">Кодим и запускаем продукт, которым теперь могут пользоваться люди!</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        <section class="advantages">
+            <div class="advantages__text">
+                <h2 data-aos="fade-up" class="advantages__title">В чём ценность?</h2>
+                <p class="advantages__note">Мы работаем гибко по модели T&M. Если необходимо внести правки или выполнить дополнительный объем работ, то просто докупите часы работников) </p>
+            </div>
+            <div class="advantages__buttons">
+                <button data-aos="fade-up" class="advantages__button button__light" id="btn-link">План ведения проекта</button>
+                <button data-aos="fade-up" class="advantages__button button__dark" id="btn-lin">Шаблон еженедельного отчёта</button>
+            </div>
+            <div class="advantages__cards">
+                <article data-aos="fade-up" class="advantages__card">
+                    <div class="advantages__info">
+                        <h3 class="advantages__type">Стоимость и сроки</h3>
+                        <p class="advantages__description">Лендинг, которым вы сейчас пользуетесь, сделан за 1,5 недели. Почасовая ставка дизайнера 1200 ₽, разработчика — 1800 ₽. Делаем недорого, но качественно — пока что нас всего 3 человека.</p>
+                    </div>
+                    <div class="advantages__icon-wrap">
+                        <img src="/src/images/svg/advantage1.svg" alt="" class="advantages__icon">
+                    </div>
+                </article>
+
+                <article data-aos="fade-up" class="advantages__card">
+                    <div class="advantages__info">
+                        <h3 class="advantages__type">Прозрачность</h3>
+                        <p class="advantages__description">Полностью делимся процессом и готовим отчеты. Берём трубку и не блокируем — всё возможное, чтобы у вас не болело сердце!</p>
+                    </div>
+                    <div class="advantages__icon-wrap">
+                        <img src="/src/images/svg/advantage2.svg" alt="" class="advantages__icon">
+                    </div>
+                </article>
+            </div>
+            <div class="advantages__cards-mobile">
+                <article data-aos="fade-up" class="advantages__card-mobile">
+                    <div class="advantages__icon-wrap">
+                        <img src="/src/images/svg/adv-mob1.svg" alt="" class="advantages__icon">
+                    </div>
+                    <div class="advantages__info">
+                        <h3 class="advantages__type">Стоимость и сроки</h3>
+                        <p class="advantages__description">Лендинг, которым вы сейчас пользуетесь, сделан за 1,5 недели. Почасовая ставка дизайнера 1200 ₽, разработчика — 1800 ₽. Делаем недорого, но качественно — пока что нас всего 3 человека.</p>
+                    </div>
+                </article>
+
+                <article data-aos="fade-up" class="advantages__card-mobile">
+                    <div class="advantages__icon-wrap">
+                        <img src="/src/images/svg/adv-mob2.svg" alt="" class="advantages__icon">
+                    </div>
+                    <div class="advantages__info">
+                        <h3 class="advantages__type">Прозрачность</h3>
+                        <p class="advantages__description">Полностью делимся процессом и готовим отчеты. Берём трубку и не блокируем — всё возможное, чтобы у вас не болело сердце!</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="media">
+            <div class="media__info">
+                <h2 data-aos="fade-up" class="media__title">Мы в медиа</h2>
+                <div class="media__buttons">
+                    <button class="media__button" id="business-button">Бизнесу</button>
+                    <button class="media__button active-media" id="designers-button">Дизайнерам</button>
+                </div>
+            </div>
+
+            <div class="media__type-cards">
+                <div class="media__cards media__cards-designers">
+                    <a data-aos="fade-up" class="media__card" href="https://vc.ru/design/1017037-podtalkivaem-polzovateley-k-znakomstvu-kak-povysit-vovlechennost-na-sayte" target="_blank">
+                        <div class="media__img-container">
+                            <figure class="media__img-wrap">
+                                <img src="src/images/media1.png" alt="" class="media__img">
+                            </figure>
+                        </div>
+                        <p class="media__link" target="_blank">Подталкиваем пользователей к знакомству: как повысить вовлеченность на сайте? <img src="src/images/svg/link.svg" alt=""></p>
+                    </a>
+                    <a data-aos="fade-up" class="media__card" href="https://vc.ru/design/965462-manipulyaciya-polzovatelyami-na-sayte-emocii-ili-informaciya-imeet-bolshiy-ves" target="_blank">
+                        <figure class="media__img-wrap">
+                            <img src="src/images/media2.png" alt="" class="media__img">
+                        </figure>
+                        <div class="media__link-wrap">
+                            <p class="media__link">Манипуляция пользователями на сайте: эмоции или информация имеет больший вес? <img src="src/images/svg/link.svg" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="media__cards media__cards-buiseness">
+                    <a data-aos="fade-up" class="media__card" href="https://vc.ru/design/1017037-podtalkivaem-polzovateley-k-znakomstvu-kak-povysit-vovlechennost-na-sayte" target="_blank">
+                        <figure class="media__img-wrap-buiseness">
+                            <img src="src/images/media3.png" alt="" class="media__img">
+                        </figure>
+                        <p class="media__link">Исследование строительного рынка и 5 концептов-редизайнов<img src="src/images/svg/link.svg" alt=""></p>
+                    </a>
+                    <a data-aos="fade-up" class="media__card"href="https://vc.ru/design/965462-manipulyaciya-polzovatelyami-na-sayte-emocii-ili-informaciya-imeet-bolshiy-ves" target="_blank">
+                        <figure class="media__img-wrap-buiseness">
+                            <img src="src/images/media4.png" alt="" class="media__img">
+                        </figure>
+                        <div class="media__link-wrap">
+                            <p class="media__link">Редизайн ЖК Новая Боровая - полностью переделали текущий сайт<img src="src/images/svg/link.svg" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <article class="form__card">
+                <div class="form__title-box">
+                    <h2 class="form__title">Оставьте контакты</h2>
+                    <p class="form__text">Познакомимся поближе и обсудим проект — напишем в течение рабочего дня!</p>
+                </div>
+                <div class="form__links">
+                    <p class="form__text">
+                        Если лень заполнять заявку, то напишите сюда
+                    </p>
+                    <div class="form__links-wrap">
+                        <a href="https://t.me/dyoma_umom" class="form__link"><img src="src/images/svg/tg.svg" alt="" class="form__icon"></a>
+                        <a href="https://api.whatsapp.com/send/?phone=79043770190" class="form__link"><img src="src/images/svg/wtsup.svg" alt="" class="form__icon"></a>
+                        <a href="mailto:info@umom.studio" class="form__link"><img src="src/images/svg/mail.svg" alt="" class="form__icon"></a>
+                    </div>
+                </div>
+            </article>
+
+            <form action="" class="form__form">
+                <div class="form__inputs">
+                    <input id="myInput" type="text" class="form__input" placeholder="Имя*" required>
+                    <input id="contactInput" type="text" class="form__input" placeholder="Любой контакт*" required>
+                </div>
+                <input id="detailsInput" type="text" class="form__input form__input-info" placeholder="Подробнее про задачу, сроки или любые пожелания" required>
+                
+                <div class="form__budjet">
+                    <p class="form__lable">Приблизительный бюджет*</p>
+                    <div class="form__budjet-buttons">
+                        <button class="button form__budjet-button">&lt;100к ₽</button>
+                        <button class="button form__budjet-button">100к — 250к ₽</button>
+                        <button class="button form__budjet-button">&gt;250к ₽</button>
+                        <button class="button form__budjet-button">Пока не знаю</button>
+                    </div>
+                </div>
+
+                <div class="form__project">
+                    <p class="form__lable">Вид проекта*</p>
+                    <div class="form__project-buttons">
+                        <button class="button-project form__project-button">Многостраничный сайт</button>
+                        <button class="button-project form__project-button">Лендинг</button>
+                        <button class="button-project form__project-button">Интернет-магазин</button>
+                        <button class="button-project form__project-button">Другая задача</button>
+                    </div>
+                </div>
+
+                <button id="submitButton" class="form__button">Отправить</button>
+
+            </form>
+        </section>
+
+        <section class="subscribe">
+            <div class="subscribe__info">
+                <h2 class="subscribe__title">Оставьте контакты</h2>
+                <p class="subscribe__describe">Познакомимся поближе и обсудим проект — напишем в течение рабочего дня!</p>
+            </div>
+            <button class="subscribe__button">Заполнить заявку</button>
+
+            <div class="subscribe__links">
+                <a href="https://t.me/dyoma_umom" class="subscribe__link"><img src="src/images/svg/tg.svg" alt="" class="form__icon"></a>
+                <a href="https://api.whatsapp.com/send/?phone=79043770190" class="subscribe__link"><img src="src/images/svg/wtsup.svg" alt="" class="form__icon"></a>
+                <a href="mailto:info@umom.studio" class="subscribe__link"><img src="src/images/svg/mail.svg" alt="" class="form__icon"></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo-wrap">
+            <svg width="100.000000" height="20.000000" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs/>
+                <path id="logo" d="M60.31 20C54.75 20 51.09 16.2 51.09 9.99C51.09 3.79 54.76 0 60.31 0C65.85 0 69.53 3.79 69.53 9.99C69.53 16.2 65.87 20 60.31 20ZM20.72 0.34L20.72 19.63L24.71 19.63L24.71 7.71C24.71 5.24 26.39 3.4 28.76 3.4C31.01 3.4 32.43 4.82 32.43 7.03L32.43 19.63L36.35 19.63L36.35 7.58C36.35 5.15 38 3.4 40.36 3.4C42.73 3.4 44.08 4.83 44.08 7.33L44.08 19.63L48.09 19.63L48.09 6.37C48.09 2.54 45.58 0.01 41.73 0.01C38.96 0.01 36.67 1.44 35.67 3.79L35.58 3.79C34.8 1.39 32.84 0.01 30.14 0.01C27.52 0.01 25.48 1.44 24.62 3.59L24.52 3.59L24.52 0.34L20.72 0.34ZM72.62 0.34L72.62 19.63L76.61 19.63L76.61 7.71C76.61 5.24 78.29 3.4 80.66 3.4C82.92 3.4 84.34 4.82 84.34 7.03L84.34 19.63L88.26 19.63L88.26 7.58C88.26 5.15 89.9 3.4 92.27 3.4C94.63 3.4 95.98 4.83 95.98 7.33L95.98 19.63L100 19.63L100 6.37C100 2.54 97.48 0.01 93.64 0.01C90.86 0.01 88.57 1.44 87.57 3.79L87.48 3.79C86.71 1.39 84.75 0.01 82.05 0.01C79.42 0.01 77.39 1.44 76.52 3.59L76.43 3.59L76.43 0.34L72.62 0.34ZM16.76 19.63L16.76 0.34L12.77 0.34L12.77 11.58C12.77 14.59 11.03 16.57 8.15 16.57C5.39 16.57 3.99 14.99 3.99 12.06L3.99 0.34L0 0.34L0 12.83C0 17.25 2.58 19.98 6.82 19.98C9.79 19.98 11.77 18.68 12.84 16.37L12.93 16.37L12.93 19.63L16.76 19.63ZM60.31 16.73C63.45 16.73 65.47 14.28 65.47 9.99C65.47 5.71 63.43 3.26 60.31 3.26C57.19 3.26 55.15 5.71 55.15 9.99C55.15 14.28 57.19 16.73 60.31 16.73Z" fill="#FCFCFE" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+        </div>
+
+        <div class="footer__logo-wrap-mob">
+            <svg width="100.000000" height="20.000000" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs/>
+                <path id="logo" d="M60.31 20C54.75 20 51.09 16.2 51.09 9.99C51.09 3.79 54.76 0 60.31 0C65.85 0 69.53 3.79 69.53 9.99C69.53 16.2 65.87 20 60.31 20ZM20.72 0.34L20.72 19.63L24.71 19.63L24.71 7.71C24.71 5.24 26.39 3.4 28.76 3.4C31.01 3.4 32.43 4.82 32.43 7.03L32.43 19.63L36.35 19.63L36.35 7.58C36.35 5.15 38 3.4 40.36 3.4C42.73 3.4 44.08 4.83 44.08 7.33L44.08 19.63L48.09 19.63L48.09 6.37C48.09 2.54 45.58 0.01 41.73 0.01C38.96 0.01 36.67 1.44 35.67 3.79L35.58 3.79C34.8 1.39 32.84 0.01 30.14 0.01C27.52 0.01 25.48 1.44 24.62 3.59L24.52 3.59L24.52 0.34L20.72 0.34ZM72.62 0.34L72.62 19.63L76.61 19.63L76.61 7.71C76.61 5.24 78.29 3.4 80.66 3.4C82.92 3.4 84.34 4.82 84.34 7.03L84.34 19.63L88.26 19.63L88.26 7.58C88.26 5.15 89.9 3.4 92.27 3.4C94.63 3.4 95.98 4.83 95.98 7.33L95.98 19.63L100 19.63L100 6.37C100 2.54 97.48 0.01 93.64 0.01C90.86 0.01 88.57 1.44 87.57 3.79L87.48 3.79C86.71 1.39 84.75 0.01 82.05 0.01C79.42 0.01 77.39 1.44 76.52 3.59L76.43 3.59L76.43 0.34L72.62 0.34ZM16.76 19.63L16.76 0.34L12.77 0.34L12.77 11.58C12.77 14.59 11.03 16.57 8.15 16.57C5.39 16.57 3.99 14.99 3.99 12.06L3.99 0.34L0 0.34L0 12.83C0 17.25 2.58 19.98 6.82 19.98C9.79 19.98 11.77 18.68 12.84 16.37L12.93 16.37L12.93 19.63L16.76 19.63ZM60.31 16.73C63.45 16.73 65.47 14.28 65.47 9.99C65.47 5.71 63.43 3.26 60.31 3.26C57.19 3.26 55.15 5.71 55.15 9.99C55.15 14.28 57.19 16.73 60.31 16.73Z" fill="#FCFCFE" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+            <div class="footer__button-wrap footer__scroll">
+                <a href="" class="footer__button"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 15.25V0.75M6 0.75L1 5.75M6 0.75L11 5.75" stroke="#212121" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <p class="footer__button-name">наверх</p>
+            </div>
+
+        </div>
+        
+
+        <div class="footer__links">
+            <div class="footer__contacts">
+                <p class="footer__name">контакты</p>
+                <a href="https://t.me/dyoma_umom" class="footer__link">телеграм <svg class="footer__icon" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6155 1L1.38477 8.5L6.9961 9.5M16.6155 1L14.6115 16L6.9961 9.5M16.6155 1L6.9961 9.5M6.9961 9.5V15L9.6004 11.7229" stroke="#FCFCFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </a>
+                <a href="https://api.whatsapp.com/send/?phone=79043770190" class="footer__link">вацап <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7442 7.49998C1.7442 4.14683 4.39926 1.42857 7.67442 1.42857C10.9496 1.42857 13.6047 4.14683 13.6047 7.49998C13.6047 10.8531 10.9496 13.5714 7.67442 13.5714C6.50777 13.5714 5.42182 13.2273 4.50557 12.6329C4.33505 12.5223 4.1261 12.4928 3.93268 12.5518L1.92397 13.1656L2.68028 11.3538C2.76967 11.1396 2.75148 10.8943 2.63154 10.6965C2.06909 9.76855 1.7442 8.6742 1.7442 7.49998ZM7.67442 0C3.62863 0 0.348852 3.35786 0.348852 7.49998C0.348852 8.81291 0.67895 10.0488 1.25906 11.1233L0.0561429 14.005C-0.050198 14.2598 -0.0030618 14.5545 0.177085 14.7612C0.357231 14.968 0.637899 15.0494 0.897203 14.9701L4.03633 14.011C5.10869 14.6403 6.35142 15 7.67442 15C11.7202 15 15 11.6421 15 7.49998C15 3.35786 11.7202 0 7.67442 0ZM9.27384 9.05884L8.35695 9.72005C7.92754 9.46962 7.45277 9.12005 6.97654 8.63248C6.48147 8.12563 6.11443 7.60234 5.84381 7.12234L6.42649 6.61599C6.67654 6.3987 6.74498 6.03237 6.59093 5.7359L5.84849 4.30733C5.74852 4.11497 5.56825 3.97985 5.35894 3.94038C5.14963 3.90091 4.93417 3.96142 4.77382 4.1047L4.55369 4.30138C4.02435 4.77438 3.71128 5.55163 3.97075 6.33863C4.23975 7.15448 4.81384 8.43855 5.9899 9.64262C7.25519 10.938 8.54044 11.4482 9.29205 11.6463C9.89763 11.8059 10.4707 11.592 10.8745 11.2551L11.2872 10.9108C11.4637 10.7636 11.5589 10.5374 11.5423 10.3049C11.5257 10.0724 11.3992 9.86284 11.2036 9.74348L10.0327 9.02919C9.79619 8.88498 9.49898 8.89655 9.27384 9.05884Z" fill="#FCFCFE"/>
+                    </svg>
+                    </a>
+                <a href="mailto:info@umom.studio" class="footer__link">почта <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.992 2.06902L13.6243 1.59484L12.925 1.22659C12.646 1.07972 12.3311 1 12 1H3C2.6701 1 2.35411 1.07964 2.07504 1.22659L1.37569 1.59484L2.00803 2.06902L6.45 5.4C6.75292 5.62719 7.12135 5.75 7.5 5.75C7.87864 5.75 8.24706 5.6272 8.54997 5.40002C8.54998 5.40001 8.54999 5.40001 8.55 5.4L12.992 2.06902ZM1.80101 2.53801L1.01687 1.94986L1.00106 2.92994L1.00006 2.99194L1 2.99194V3V8C1 8.53043 1.21071 9.03914 1.58579 9.41421C1.96086 9.78929 2.46957 10 3 10H12C12.5304 10 13.0391 9.78929 13.4142 9.41421C13.7893 9.03914 14 8.53043 14 8V3H14.0001L13.9999 2.99193L13.9989 2.92993L13.9831 1.94986L13.199 2.53801L8.85 5.8C8.46053 6.0921 7.98683 6.25 7.5 6.25C7.01317 6.25 6.53948 6.0921 6.15001 5.80001C6.15001 5.80001 6.15 5.8 6.15 5.8L1.80101 2.53801ZM0.5 3C0.5 2.33696 0.763392 1.70107 1.23223 1.23223C1.70107 0.763392 2.33696 0.5 3 0.5H12C12.663 0.5 13.2989 0.763392 13.7678 1.23223C14.2366 1.70107 14.5 2.33696 14.5 3V8C14.5 8.66304 14.2366 9.29893 13.7678 9.76777C13.2989 10.2366 12.663 10.5 12 10.5H3C2.33696 10.5 1.70107 10.2366 1.23223 9.76777C0.763392 9.29893 0.5 8.66304 0.5 8V3Z" stroke="#FCFCFE"/>
+                    </svg>
+                    </a>
+            </div>
+
+            <div class="footer__contacts">
+                <p class="footer__name">соц.сети</p>
+                <a href="https://t.me/umom_design" class="footer__link">телеграм-канал <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6155 1L1.38477 8.5L6.9961 9.5M16.6155 1L14.6115 16L6.9961 9.5M16.6155 1L6.9961 9.5M6.9961 9.5V15L9.6004 11.7229" stroke="#FCFCFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </a>
+                <a href="https://vc.ru/u/890772-arseniy-volkov" class="footer__link">висишка <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="path-1-inside-1_1436_838" fill="white">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0138 0.0756256C10.8588 0.356956 9.90629 1.27199 9.53295 2.459C9.40122 2.87788 9.37626 3.71299 9.4813 4.18795C9.7023 5.18725 10.4089 6.0986 11.2972 6.53001C11.8137 6.78084 12.0588 6.84697 12.6385 6.89195C13.5831 6.96522 14.5084 6.63071 15.1936 5.96819C15.3986 5.76996 15.5575 5.58352 15.5467 5.55381C15.5257 5.49609 14.7845 4.90798 14.7327 4.90798C14.7157 4.90798 14.5801 5.01867 14.4314 5.15394C13.2912 6.19074 11.5558 5.90339 10.9004 4.56924C10.3969 3.54436 10.6043 2.34318 11.4117 1.60814C11.8872 1.17525 12.1715 1.0772 12.9524 1.07661C13.5366 1.07619 13.607 1.08734 13.9113 1.22843L14.2397 1.38067V1.95496V2.5292H14.8177H15.3957V1.71428V0.899368L15.1987 0.745858C14.7574 0.402047 14.3171 0.206194 13.6811 0.0706037C13.2299 -0.0255518 12.4194 -0.0231201 12.0138 0.0756256ZM1.78654 0.703727V1.25703L2.37047 1.27199L2.95446 1.28695L3.05077 1.55126C3.20935 1.98615 3.79439 3.62851 4.31243 5.09299C4.57984 5.84894 4.83095 6.54555 4.87041 6.64107L4.94219 6.81467L5.47531 6.79966L6.00843 6.78459L7.03454 4.02254L8.06064 1.26052H8.60175H9.14286V0.705471V0.150425H8.17077C7.63612 0.150425 7.19869 0.156398 7.19869 0.16364C7.19869 0.170935 7.03128 0.664504 6.82667 1.26052C6.62206 1.85654 6.32434 2.72479 6.16507 3.18997C6.00575 3.65516 5.79752 4.26174 5.70231 4.53795C5.59984 4.83503 5.51614 5.00773 5.49733 4.96084C5.47978 4.91723 5.40443 4.70314 5.32987 4.48508C4.38132 1.71222 4.0238 0.660169 3.95103 0.427949L3.86412 0.150425H2.8253H1.78654V0.703727ZM2.28177 8.30881C2.26701 8.34755 2.26186 8.57951 2.27032 8.82421L2.28571 9.26909L2.8243 9.28416L3.36289 9.29922V11.5176V13.7359H2.80933H2.25576L2.27074 14.2777L2.28571 14.8196L4.79475 14.8333L7.30378 14.847V14.3179V13.7888H5.90907H4.51431L4.52976 12.269L4.54516 10.7492L4.70941 10.4056C4.79974 10.2166 4.95753 9.96517 5.0601 9.84687C5.28688 9.5851 5.77051 9.31794 6.10837 9.26777L6.35796 9.23066V9.73882V10.247H6.90969H7.46141V9.24266V8.23829L6.84401 8.23892C5.73746 8.24003 5.17643 8.50276 4.53128 9.32195L4.36477 9.5334L4.36256 9.16337C4.36135 8.95985 4.34543 8.66842 4.3272 8.51581L4.29404 8.23829H3.30136C2.52254 8.23829 2.3029 8.25346 2.28177 8.30881ZM8.7225 8.79133V9.34442L9.20854 9.35959L9.69458 9.37481L9.72201 11.2778C9.74592 12.9411 9.76142 13.2142 9.84502 13.4452C10.2273 14.5018 11.0863 15.061 12.2252 14.9947C12.9078 14.955 13.4627 14.6423 13.847 14.0809C13.957 13.9202 14.0539 13.7957 14.0624 13.8042C14.0709 13.8127 14.1032 13.997 14.1344 14.2139C14.2372 14.9297 14.1116 14.8507 15.1212 14.8341L16 14.8196V14.291V13.7623L15.5748 13.7471L15.1495 13.7319L15.115 12.6946C15.096 12.1241 15.0805 10.8876 15.0805 9.94678V8.23623L13.9376 8.25045L12.7947 8.26472L12.7798 8.80655L12.7648 9.34838H13.3481H13.9314L13.9148 10.9488L13.8982 12.5492L13.7258 12.9012C13.1476 14.082 11.601 14.3236 11.0887 13.313C10.9004 12.9416 10.8768 12.6186 10.8768 10.403V8.23829H9.79967H8.7225V8.79133ZM0 14.2645V14.8496L0.56486 14.8346L1.12972 14.8196V14.2645V13.7095L0.56486 13.6945L0 13.6795V14.2645Z"/>
+                    </mask>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0138 0.0756256C10.8588 0.356956 9.90629 1.27199 9.53295 2.459C9.40122 2.87788 9.37626 3.71299 9.4813 4.18795C9.7023 5.18725 10.4089 6.0986 11.2972 6.53001C11.8137 6.78084 12.0588 6.84697 12.6385 6.89195C13.5831 6.96522 14.5084 6.63071 15.1936 5.96819C15.3986 5.76996 15.5575 5.58352 15.5467 5.55381C15.5257 5.49609 14.7845 4.90798 14.7327 4.90798C14.7157 4.90798 14.5801 5.01867 14.4314 5.15394C13.2912 6.19074 11.5558 5.90339 10.9004 4.56924C10.3969 3.54436 10.6043 2.34318 11.4117 1.60814C11.8872 1.17525 12.1715 1.0772 12.9524 1.07661C13.5366 1.07619 13.607 1.08734 13.9113 1.22843L14.2397 1.38067V1.95496V2.5292H14.8177H15.3957V1.71428V0.899368L15.1987 0.745858C14.7574 0.402047 14.3171 0.206194 13.6811 0.0706037C13.2299 -0.0255518 12.4194 -0.0231201 12.0138 0.0756256ZM1.78654 0.703727V1.25703L2.37047 1.27199L2.95446 1.28695L3.05077 1.55126C3.20935 1.98615 3.79439 3.62851 4.31243 5.09299C4.57984 5.84894 4.83095 6.54555 4.87041 6.64107L4.94219 6.81467L5.47531 6.79966L6.00843 6.78459L7.03454 4.02254L8.06064 1.26052H8.60175H9.14286V0.705471V0.150425H8.17077C7.63612 0.150425 7.19869 0.156398 7.19869 0.16364C7.19869 0.170935 7.03128 0.664504 6.82667 1.26052C6.62206 1.85654 6.32434 2.72479 6.16507 3.18997C6.00575 3.65516 5.79752 4.26174 5.70231 4.53795C5.59984 4.83503 5.51614 5.00773 5.49733 4.96084C5.47978 4.91723 5.40443 4.70314 5.32987 4.48508C4.38132 1.71222 4.0238 0.660169 3.95103 0.427949L3.86412 0.150425H2.8253H1.78654V0.703727ZM2.28177 8.30881C2.26701 8.34755 2.26186 8.57951 2.27032 8.82421L2.28571 9.26909L2.8243 9.28416L3.36289 9.29922V11.5176V13.7359H2.80933H2.25576L2.27074 14.2777L2.28571 14.8196L4.79475 14.8333L7.30378 14.847V14.3179V13.7888H5.90907H4.51431L4.52976 12.269L4.54516 10.7492L4.70941 10.4056C4.79974 10.2166 4.95753 9.96517 5.0601 9.84687C5.28688 9.5851 5.77051 9.31794 6.10837 9.26777L6.35796 9.23066V9.73882V10.247H6.90969H7.46141V9.24266V8.23829L6.84401 8.23892C5.73746 8.24003 5.17643 8.50276 4.53128 9.32195L4.36477 9.5334L4.36256 9.16337C4.36135 8.95985 4.34543 8.66842 4.3272 8.51581L4.29404 8.23829H3.30136C2.52254 8.23829 2.3029 8.25346 2.28177 8.30881ZM8.7225 8.79133V9.34442L9.20854 9.35959L9.69458 9.37481L9.72201 11.2778C9.74592 12.9411 9.76142 13.2142 9.84502 13.4452C10.2273 14.5018 11.0863 15.061 12.2252 14.9947C12.9078 14.955 13.4627 14.6423 13.847 14.0809C13.957 13.9202 14.0539 13.7957 14.0624 13.8042C14.0709 13.8127 14.1032 13.997 14.1344 14.2139C14.2372 14.9297 14.1116 14.8507 15.1212 14.8341L16 14.8196V14.291V13.7623L15.5748 13.7471L15.1495 13.7319L15.115 12.6946C15.096 12.1241 15.0805 10.8876 15.0805 9.94678V8.23623L13.9376 8.25045L12.7947 8.26472L12.7798 8.80655L12.7648 9.34838H13.3481H13.9314L13.9148 10.9488L13.8982 12.5492L13.7258 12.9012C13.1476 14.082 11.601 14.3236 11.0887 13.313C10.9004 12.9416 10.8768 12.6186 10.8768 10.403V8.23829H9.79967H8.7225V8.79133ZM0 14.2645V14.8496L0.56486 14.8346L1.12972 14.8196V14.2645V13.7095L0.56486 13.6945L0 13.6795V14.2645Z" stroke="#FCFCFE" stroke-width="2" mask="url(#path-1-inside-1_1436_838)"/>
+                    </svg>
+                    </a>
+                <a href="https://dprofile.ru/volkov_arseniy" class="footer__link">дпрофайл <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.25 2.2825V4.12163C14.0037 3.61494 13.6731 3.14782 13.267 2.74203C12.8555 2.33077 12.3811 1.99697 11.8663 1.75H13.7189C13.8598 1.75038 13.9948 1.80658 14.0944 1.90629C14.194 2.00613 14.25 2.14143 14.25 2.2825ZM1.2825 1.75H3.15179C2.63321 1.99892 2.15982 2.33405 1.75209 2.74171C1.33879 3.15493 1.00002 3.63562 0.75 4.16247V2.2825C0.75 2.14127 0.806103 2.00583 0.905966 1.90597C1.00583 1.8061 1.14127 1.75 1.2825 1.75ZM0.75 14.7175V12.8337C0.998063 13.3565 1.33552 13.8382 1.75257 14.2551C2.16554 14.668 2.64196 15.0028 3.15892 15.25H1.2825C1.14127 15.25 1.00583 15.1939 0.905966 15.094C0.806102 14.9942 0.75 14.8587 0.75 14.7175ZM11.8519 15.25C12.3687 15.0029 12.845 14.6683 13.2579 14.2558C13.669 13.8451 14.0028 13.3715 14.25 12.8576V14.7175C14.25 14.8586 14.194 14.9939 14.0944 15.0937C13.9948 15.1934 13.8598 15.2496 13.7189 15.25C13.7187 15.25 13.7186 15.25 13.7184 15.25L11.8519 15.25Z" stroke="#FCFCFE" stroke-width="1.5"/>
+                    </svg>
+                    </a>
+            </div>
+        </div>
+
+        <div class="footer__button-wrap footer__button-desc">
+            <a href="" class="footer__button"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 15.25V0.75M6 0.75L1 5.75M6 0.75L11 5.75" stroke="#212121" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <p class="footer__button-name">наверх</p>
+        </div>
+    </footer>
+    <script src="src/js/jquery-3.7.1.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/progress.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
