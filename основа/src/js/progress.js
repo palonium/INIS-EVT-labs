@@ -16,7 +16,7 @@
         agTimelineLineProgress = $('.js-timeline_line-progress'),
         agTimelinePoint = $('.js-timeline-card_point-box'),
         agTimelineItem = $('.js-timeline_item'),
-        agProgressTitle = $('.progress__title'),
+        agProgressTitle = $('.progress__title-first'),
         agProgressTitleSecond = $('.progress__title-second'),
         agProgressTitleThird = $('.progress__title-third'),
         agProgressTitleFourth = $('.progress__title-fourth'),
@@ -67,19 +67,19 @@
           agProgressTitleSecond.each(function () {
             var agTop = $(this).offset().top;
           
-            (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('active-text-decoration-second') : $(this).removeClass('active-text-decoration');
+            (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('active-text-decoration-second') : $(this).removeClass('active-text-decoration-second');
           })
 
           agProgressTitleThird.each(function () {
             var agTop = $(this).offset().top;
           
-            (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('active-text-decoration-third') : $(this).removeClass('active-text-decoration');
+            (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('active-text-decoration-third') : $(this).removeClass('active-text-decoration-third');
           })
 
           agProgressTitleFourth.each(function () {
             var agTop = $(this).offset().top;
           
-            (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('active-text-decoration-fourth') : $(this).removeClass('active-text-decoration');
+            (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('active-text-decoration-fourth') : $(this).removeClass('active-text-decoration-fourth');
           })
       }
   
@@ -92,16 +92,16 @@
     });
   })(jQuery);
 
-  // Получаем все элементы с классом "your-class"
-var elements = document.getElementsByClassName('active-text-decoration');
+//   // Получаем все элементы с классом "your-class"
+// var elements = document.getElementsByClassName('active-text-decoration');
 
-// Проверяем, что есть как минимум два элемента с этим классом
-if (elements.length >= 2) {
-  // Выбираем второй элемент (индекс 1)
-  var secondElement = elements[1];
+// // Проверяем, что есть как минимум два элемента с этим классом
+// if (elements.length >= 2) {
+//   // Выбираем второй элемент (индекс 1)
+//   var secondElement = elements[1];
 
-  // Устанавливаем ширину псевдоэлемента второго элемента
-  var pseudoElement = window.getComputedStyle(secondElement, '::after');
-  pseudoElement.setProperty('width', '500px');
-}
+//   // Устанавливаем ширину псевдоэлемента второго элемента
+//   var pseudoElement = window.getComputedStyle(secondElement, '::after');
+//   pseudoElement.setProperty('width', '500px');
+// }
   

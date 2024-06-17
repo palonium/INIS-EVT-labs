@@ -3,16 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html {
-	scroll-behavior: smooth;
-}
-
 button{
 	cursor: pointer;
 }
 
 .container{
 	padding: 0 50px;
+	position: relative;
 }
 
 /* Обычный */
@@ -28,9 +25,27 @@ button{
 }
 
 .main__ofer{
-	margin-top: 230px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 180px;
 }
-.main__mobile{
+
+.main__title, .main__description{
+	text-align: center;
+}
+
+.main__title{
+	max-width: 1180px;
+}
+.main__information{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.main__mobile, .footer__logo-wrap-mob{
 	display: none;
 }
 
@@ -50,7 +65,7 @@ button{
 	margin-bottom: 10px;
 }
 
-.main, .portfolio__card, .portfolio, .form{
+.main, .portfolio__card, .portfolio, .form, .service{
 	margin-bottom: 80px;
 }
 
@@ -58,17 +73,21 @@ button{
 	border-radius: 20px;
 }
 
+.service__title, .process__title{
+	margin-bottom: 36px;
+}
+
 .main{
 	margin-top: 100px;
 }
 
-.portfolio__tag, .modal__text, .progress__number, .progress__description, .footer__name, .footer__button-name, .form__lable, .form__text, .advantages__note, .main__scroll-name, .portfolio__info, .service__price, .service__description, .advantages__description{
+.portfolio__tag, .popup__message, .modal__text, .progress__number, .progress__description, .footer__name, .footer__button-name, .form__lable, .form__text, .advantages__note, .main__scroll-name, .portfolio__info, .service__price, .service__description, .advantages__description{
 	font-family: SF Pro Display;
 	font-size: 16px;
 	font-weight: 500;
 }
 
-.footer__link{
+.footer__link, .fixed__button{
 	font-family: SF Pro Display;
 	font-size: 24px;
 	font-weight: 500;
@@ -80,17 +99,17 @@ button{
 	font-weight: 500;
 }
 
-.media__button, .header__button, .form__budjet-button, .form__project-button, .form__input, .form__button{
+.media__button, .header__button, .form__budjet-button, .form__project-button, .form__input, .form__button, .service__button{
 	font-family: SF Pro Display;
 	font-size: 20px;
 	font-weight: 500;
 }
 
 .media__link,.media__button, .header__mail, .portfolio__title{
-	color: rgba(33, 33, 33, 1);
+	color: #212121;
 }
 
-.service__title, .media__title, .form__title{
+.service__title, .media__title, .form__title, .process__title{
 	font-family: SF Pro Display;
 	font-size: 84px;
 	font-weight: 500;
@@ -107,65 +126,100 @@ button{
 
 .advantages__title, .modal__title{
 	font-family: SF Pro Display;
-	font-size: 64px;
+	font-size: 84px;
 	font-weight: 500;
 	line-height: 90%;
 }
 
 
 .main__hightlight, .portfolio__info, .modal__text, .main__description, .service__description, .advantages__description, .advantages__note, .progress__description{
-	color: rgba(33, 33, 33, 0.5);
+	color: #21212180;
 }
 
-.portfolio__tag, .active, .form__card, .header__button, .footer__name, .footer__button-name, .footer__link{
+.portfolio__tag, .active, .form__card, .header__button, .footer__name, .footer__button-name, .footer__link, .service__button, .fixed__button{
 	color: rgb(252, 252, 254);
 }
 
-.header__link{
-	background: rgb(233, 228, 247);
-}
-
-.form__budjet-button, .form__project-button, .form__input, .header{
+.form__budjet-button, .form__project-button, .form__input, .header__container{
 	background: rgb(244, 243, 253);
 }
 
-.portfolio__tag{
+.portfolio__tag, .service__button, .fixed__button{
 	background-color: rgba(66, 52, 243, 1);
 }
 
-.media__link, .header__mail, .footer__link, .portfolio__card, .media__card{
+.media__link, .header__mail, .footer__link, .portfolio__card, .media__card, .fixed__link{
 	text-decoration: none;
 }
 
-.main__button, .form__link, .header__link, .footer__button{
+.footer__button{
 	border-radius: 50%;
 }
 
-.form__button, .header__button{
+.form__button, .header__button, .service__button{
 	padding: 16px 36px;
 }
 .form__input, .form__budjet-button, .form__project-button, .form__button, .header__button{
  	border-radius: 16px;
 }
 
+.portfolio__img-container, .header__container{
+	border-radius: 20px;
+}
+
+.portfolio__tag, .media__button, .service__button{
+	border-radius: 12px;
+}
+
 .form__budjet-button, .form__project-button, .form__button, .header__button, .media__button, .portfolio__card{
 	cursor: pointer;
 }
 
-.main__title{
-  background: rgb(158,150,243); 
-  background: linear-gradient(181deg, rgba(158,150,243,1) 0%, rgba(79,69,196,1) 35%, rgba(27,20,95,1) 100%);-webkit-background-clip: text;
-	-webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 0px;
-  text-align: left;
-  max-width: 1340px;
+.process{
+	display: flex;
+	justify-content: space-between;
 }
+
+.process__buttons{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: end;
+}
+
+.process__title{
+	max-width: 445px;
+}
+
+.process__button{
+	border-radius: 16px;
+	border: none;
+	padding: 16px 36px;
+	font-size: 20px;
+}
+
+.button__light-process{
+	max-width: 290px;
+	background-color: #E9E4F7;
+}
+
+.button__dark-process{
+	color: #fff;
+	background-color: #4234F3;
+}
+
+.main__title{
+	background: rgb(158,150,243); 
+	background: linear-gradient(181deg, rgba(158,150,243,1) 0%, rgba(79,69,196,1) 35%, rgba(27,20,95,1) 100%);-webkit-background-clip: text;
+	  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	letter-spacing: 0px;
+	max-width: 1340px;
+  }
 
 .main__ofer{
 	display: flex;
-	position: relative;
 }
 
 .main__img{
@@ -201,11 +255,9 @@ button{
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 110%;
-	letter-spacing: 0px;
-	text-align: left;
 }
 
-.main__info, .advantages__text, .media__info, .header{
+.main__info, .advantages__text, .media__info, .header__container, .service__card{
 	display: flex;
 	justify-content: space-between;
 }
@@ -215,11 +267,11 @@ button{
 }
 
 
-.main__button{
+/* .main__button{
 	padding: 10px 15px;
 	background-color: rgb(233, 228, 247);;
 	border: none;
-}
+} */
 
 .main__scroll, .footer__button{
 	display: flex;
@@ -237,6 +289,7 @@ button{
 .portfolio__img-wrap{
 	max-width: 900px;
 	aspect-ratio: 1/0.946;
+	position: relative;
 }
 
 .portfolio__img, .media__img{
@@ -245,9 +298,6 @@ button{
 	object-fit: cover;
 }
 
-.portfolio__img-wrap{
-	position: relative;
-}
 
 .media__card{
 	display: flex;
@@ -265,12 +315,16 @@ button{
 
 .portfolio__tag{
 	padding: 8px 36px;
-	border-radius: 12px;
 }
 
 .service__card,.advantages__card, .form__form, .advantages__card-mobile{
 	background: rgb(244, 243, 253);
 	padding: 20px;
+}
+
+.service__info{
+	display: grid;
+	grid-template-columns: 2.2fr 0.8fr;
 }
 
 /* .service__ofer{
@@ -288,8 +342,17 @@ button{
 	min-height: 360px;
 }
 
-.advantages__card, .form__links-wrap, .footer, .footer__contacts, .footer__links{
+.advantages__card, .form__links-wrap, .footer, .footer__contacts, .footer__links, .service__button{
 	display: flex;
+}
+
+.footer{
+	justify-content: space-between;
+}
+
+.service__button{
+	align-items: center;
+	border: none;
 }
 
 .advantages__cards{
@@ -311,7 +374,6 @@ button{
 
 .media__button{
 	padding: 12px 36px;
-	border-radius: 12px;
 	border: none;
 	background: rgb(244, 243, 253);
 }
@@ -322,7 +384,6 @@ button{
 
 .media__link{
 	overflow: hidden;
-	max-width: 670px;
 }
 
 .form__card{
@@ -331,11 +392,6 @@ button{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-
-.form__link{
-	padding: 15px 17px;
-	background: rgb(244, 243, 253);
 }
 
 .form__links-wrap{
@@ -373,8 +429,11 @@ button{
 }
 
 .form__lable{
-	color: rgb(135, 132, 170);
 	margin-bottom: 8px;
+}
+
+.form__lable, .form__budjet-button, .form__project-button, .form__button{
+	color: #8784aa;
 }
 
 .form__budjet-button, .form__project-button{
@@ -397,21 +456,23 @@ button{
 	height: 60px;
 }
 
-.header__link{
-	padding: 16px 15px;
-}
-
 .header__button{
 	border: none;
 }
 
 .header{
-	padding: 15px 50px;
+	padding: 10px 30px;
 	align-items: center;
 	position: fixed;
   top: 0;
   width: 100%; 
   z-index: 1000; 
+  background-color: #fff;
+}
+
+.header__container{
+	padding: 20px 17px;
+	position: relative;
 }
 
 .header__info{
@@ -440,21 +501,35 @@ button{
 .footer{
 	padding: 32px 50px 20px;
 }
+textarea{
+	resize: none;
+}
 
-input:hover{
+input, textarea{
+	color: #8784a980;
+	word-break: break-all;
+}
+
+input::placeholder, textarea::placeholder {
+	color: #8784a980;
+	white-space: pre-line;
+}
+
+input:hover, textarea:hover{
 	border-color: rgba(33, 33, 33, 0.15);
 }
   
-input:hover::placeholder {
+input:hover::placeholder, textarea:hover::placeholder {
 	color: rgba(33, 33, 33, 0.15);
 }
 
-input:focus {
-	border-color: rgba(33, 33, 33, 0.15); 
+input:focus, textarea:focus {
+	border-color: #8784AA 50%;
+	color: #8784AA 50%;
 	outline: none; 
   }
   
-  input:focus::placeholder {
+  input:focus::placeholder, textarea:focus::placeholder  {
 	color: rgb(244, 243, 253); 
   }
 
@@ -466,35 +541,69 @@ input:focus {
 	background-color: rgba(66, 52, 243, 1);;
 }
 
-.form__budjet-button:hover, .form__project-button:hover, .form__button:hover, .media__button:hover, .header__button:hover{
+.form__budjet-button:hover, .form__project-button:hover, .submit-active:hover, .media__button:hover{
 	background: rgb(129, 134, 237);
 	color: rgb(252, 252, 254);
 }
 
-.active, .form__button:active, .media__button:active, .active-media {
+.active:hover{
+	background-color: rgba(66, 52, 243, 1);
+}
+
+.active, .media__button:active, .active-media {
 	background-color: rgba(66, 52, 243, 1);
 	color: rgb(252, 252, 254);
 }
+
+.header__link-icon {
+    transition: all .5s ease;
+  }
+
+  .header__link-icon:hover path,
+  .form__link:hover path, .form__link-modal-tg:hover path, .form__link-modal-mobile-tg:hover path{
+    stroke: #fff;
+    fill: #4234F3;
+	transition: all .5s ease;
+  }
+
+  .header__link-icon:hover path, .form__link:hover rect, .form__link-wt:hover rect, .form__link-modal-wt:hover rect, .form__link-modal-mobile-wt:hover rect,  .form__link-modal-ml:hover rect, .form__link-modal-mobile-ml:hover rect, .form__link-ml:hover rect, .form__link-modal-tg:hover rect, .form__link-modal-mobile-tg:hover rect {
+    fill: #4234F3;
+	transition: all .5s ease;
+  }
+
+  .form__link-wt:hover path, .form__link-ml:hover path, .form__link-modal-wt:hover path, .form__link-modal-ml:hover path, .form__link-modal-mobile-wt:hover path, .form__link-modal-mobile-ml:hover path{
+    fill: #fff;
+	transition: all .5s ease;
+  }
+
+  #plane-path {
+    transition: fill .5s ease; /* Добавленная анимация */
+  }
+
+  .header__link-icon:hover #plane-path {
+    fill: #4234F3;
+  }
 
 .header__mail{
 	text-decoration: none; 
 	position: relative; 
   }
   
-  .header__mail::after{
-	content: ""; 
-	display: block; 
+  .header__mail::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
 	height: 2px;
-	width: 0; 
-	background-color: #000000;
-	position: absolute; 
-	bottom: -2px; 
-	left: 0; 
-	transition: width 0.7s ease; 
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	transform: scaleX(0);
+	transition: transform 0.7s ease;
   }
 
-  .header__mail:hover::after{
-	width: 100%; /* Увеличиваем ширину полоски до 100% при ховере */
+  .header__mail:hover::before {
+	transform: scaleX(1);
   }
 
 
@@ -515,8 +624,8 @@ input:focus {
 }
 
 .portfolio__img-container {
-	max-width: 900px; /* Замените на нужную вам ширину контейнера */
-	max-height: 863px; /* Замените на нужную вам высоту контейнера */
+	max-width: 100%;
+	max-height: 100%;
 	overflow: hidden;
   }
 
@@ -537,7 +646,7 @@ input:focus {
   }
   
   .portfolio__img:hover, .media__img:hover {
-	transform: scale(1.2);
+	transform: scale(1.067);
   }
 
   .scrollable-block {
@@ -573,16 +682,17 @@ input:focus {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.4);
   }
   
   .modal-content {
 	background-color: #fefefe;
-	margin: 2% auto;
 	padding: 20px;
 	border: 1px solid #888;
-	width: 80%;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
   }
   
   .close {
@@ -627,12 +737,12 @@ input:focus {
 	opacity: 1;
   }
 
-  .form__modal, .form__input-modal, .form__button-modal{
+  .form__modal, .form__input-modal, .form__button-modal-select{
 	background-color: #fff;
   }
 
   .form__modal{
-	max-width: 1000px;
+	max-width: 965px;
   }
 
   .form__links-wrap-modal{
@@ -640,21 +750,22 @@ input:focus {
 	display: block;
 	list-style: none;
 	float: right;
+	top: 60px;
   }
   .form__link-modal{
 	position: absolute;
-	top: 100px;
 	left: -100px;
-	border-radius: 50%;
-	padding: 15px 17px;
-	background-color: #E9E4F7;
   }
   .form__link-modal-wt{
-	top: 160px;
+	top: 60px;
   }
 
   .form__link-modal-ml{
-	top: 222px;
+	top: 120px;
+  }
+
+  .form__links-wrap-modal-mobile{
+	display: none;
   }
 
   .active{
@@ -665,14 +776,128 @@ input:focus {
 	display: none;
   }
 
+  .footer__items{
+	display: flex;
+	gap: 435px;
+
+  }
+
+  .submit-active{
+	background-color: #4234F3;
+	color: #fff;
+  }
+
+  .submit-active svg path{
+	stroke: #fff;
+  }
+
+  /* Стили для видоизмененного попапа */
+.popup {
+	display: none; /* По умолчанию попап скрыт */
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон */
+  }
+  
+  .popup-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 36px;
+	border: 1px solid #888;
+	width: 602px;
+	border-radius: 20px;
+  }
+  
+  .popup-close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .popup-close:hover,
+  .popup-close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  .popup__message{
+	color: #8784a980;
+  }
+
+  .popup__title{
+	font-family: SF Pro Display;
+	font-size: 42px;
+	font-weight: 500;
+	margin-bottom: 60px;
+  }
+
+  .popup__button{
+	width: 100%;
+	border: none;
+	border-radius: 16px;
+	padding: 16px 0;
+	font-size: 20px;
+	font-family: SF Pro Display;
+  }
+
+  .fixed-block {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	/* padding: 20px; */
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 10px;
+
+	display: none;
+
+  }
+  
+  .fixed__button{
+	margin: 0 10px;
+	width: 100%;
+	max-width: 398px;
+	border: none;
+	padding: 24px 0;
+	border-radius: 12px;
+
+  }
+
+
+  @media(min-width: 1920px){
+	main{
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+  }
 
   @media (max-width: 1600px){
 	.main__title{
-		font-family: SF Pro Display;
 		font-size: 84px;
-		font-weight: 500;
-		line-height: 90%;
-		max-width: 1340px;
+		max-width: 1060px;
+	}
+
+	.modal__title{
+		font-size: 64px;
+	}
+
+	.service__title, .form__title, .media__title{
+		font-size: 72px;
+	}
+
+	.service__name{
+		font-size: 24px;
 	}
 
 	.main__img-main{
@@ -686,19 +911,21 @@ input:focus {
 	.main__img-small{
 		max-width: 390px;
 	}
+
+	.footer__items{
+		gap: 275px;
+	
+	  }
   }
 
   @media(max-width: 1480px){
 	.main__title{
-		font-family: SF Pro Display;
-		font-size: 64px;
-		font-weight: 500;
-		line-height: 90%;
+		font-size: 72px;
 		display: flex;
 		max-width: 764px;
 	}
 	.form__modal{
-		max-width: 800px;
+		max-width: 965px;
 	}
   }
 
@@ -711,11 +938,32 @@ input:focus {
 		display: flex;
 		max-width: 401px;
 	}
-	.service__title, .media__title, .form__title, .main__title{
-		font-family: SF Pro Display;
+
+	.header__mail{
+		font-size: 24px;
+	}
+
+	.media__title{
+		font-size: 72px;
+	}
+	.service__title, .form__title, .media__title, .process__title{
 		font-size: 64px;
-		font-weight: 500;
-		line-height: 90%;
+	}
+
+	.service__name, .form__budjet-button, .form__project-button, .form__input, .popup__message{
+		font-size: 16px;
+	}
+
+	.form__budjet-button, .form__project-button{
+		padding: 16px;
+	}
+
+	.form__input-info {
+		padding-bottom: 88px;
+	}
+
+	.footer__items{
+		gap: 74px;
 	}
 
 	.main__title{
@@ -730,6 +978,10 @@ input:focus {
 	.form__modal{
 		max-width: 800px;
 	}
+
+	.process__button{
+		font-size: 16px;
+	}
   }
 
   @media(max-width: 1199px){
@@ -740,9 +992,7 @@ input:focus {
 		line-height: 90%;
 		text-align: center;
 	}
-	.modal__title{
-		font-size: 32px;
-	}
+
 	.subscribe__describe{
 		max-width: 313px;
 		font-family: SF Pro Display;
@@ -755,8 +1005,11 @@ input:focus {
 	.subscribe{
 		margin-bottom: 80px;
 	}
-	.main__desctop, .advantages__card, .advantages__note, .footer__button-desc, .footer__logo-wrap, .form__links-wrap-modal{
+	.main__desctop, .advantages__card, .advantages__note, .footer__button-desc, .footer__logo-wrap{
 		display: none;
+	}
+	.form__link-modal{
+		left: -63px;
 	}
 
 	.main__mobile{
@@ -765,21 +1018,21 @@ input:focus {
 		position: relative;
 	}
 
-	.footer__scroll, .footer, .form__inputs{
+	.footer__scroll, .footer, .footer__items{
 		display: block;
 	}
 
-	.form__inputs, .form__budjet-buttons, .form__project-buttons{
+	/* .form__inputs, .form__budjet-buttons, .form__project-buttons{
 		display: flex;
 		flex-direction: column;
 		row-gap: 12px;
-	}
+	} */
 	.form__links-wrap{
 		justify-content: center;
 	}
-	.form__input, .form__budjet-button, .form__project-button{
+	/* .form__input, .form__budjet-button, .form__project-button{
 		width: 100%;
-	}
+	} */
 	.modal__title{
 		max-width: 288px;
 	}
@@ -835,13 +1088,6 @@ input:focus {
 		margin-bottom: 60px;
 	}
 
-	.subscribe, .subscribe__info{
-		display: flex;
-		flex-direction: column ;
-		align-items: center;
-		text-align: center;
-	}
-
 	.subscribe__button{
 		max-width: 520px;
 		width: 100%;
@@ -873,8 +1119,61 @@ input:focus {
   }
   .modal__title, .modal__text{
 	display: flex;
-	max-width: 188px;
   }
+  }
+
+  @media(max-width: 1000px){
+	.form__links-wrap-modal{
+		display: none;
+	}
+
+	.form__links-wrap-modal-mobile{
+		display: flex;
+	}
+
+	.form__links-wrap-modal-mobile{
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.form__button-modal{
+		margin-bottom: 60px;
+	}
+
+	.form__modal, .form__inputs, .form__budjet-buttons, .form__project-buttons{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.form__budjet-button, .form__project-button{
+		margin-bottom: 8px;
+	}
+
+	.form__budjet-button, .form__project-button{
+		margin-bottom: 8px;
+		padding: 16px 0;
+	}
+
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background-color: rgba(0, 0, 0, 0.4);
+	  }
+	  
+	  .modal-content {
+		background-color: #fefefe;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
+	  }
   }
 
   @media (max-width: 1050px){
@@ -882,18 +1181,18 @@ input:focus {
 		font-family: SF Pro Display;
 	font-size: 16px;
 	font-weight: 500;
+	position: relative;
 	}
+
+	.media__link svg{
+		max-width: 16px;
+	}
+	
 
 	.advantages__card{
 		margin-bottom: 20px;
 	}
 
-	.advantages__buttons{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 20px;
-	}
 
 	.advantages__button{
 		max-width: 500px;
@@ -946,6 +1245,17 @@ input:focus {
 		display: none;
 	}
 
+	.subscribe, .subscribe__info{
+		display: flex;
+		flex-direction: column ;
+		align-items: center;
+		text-align: center;
+	}
+
+	.form__links-wrap-modal-mobile{
+		display: flex;
+		gap: 10px;
+	}
   }
 
   @media(max-width:800px){
@@ -959,16 +1269,34 @@ input:focus {
 	.header__mail, .form{
 		display: none;
 	}
+
+	.advantages__buttons{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.process__buttons{
+		display: none;
+	}
   }
 
-  @media(max-width:599px){
+  @media(max-width:600px){
+	.span{
+		font-family: SF Pro Display;
+		font-weight: 900;
+		color: #454141;
+	}
+  }
+  @media(max-width:600px){
 	.container{
 		padding: 0 20px;
 	}
 	.main__title{
 		font-size: 38px;
 	}
-	.service__title, .media__title, .form__title{
+	.service__title, .media__title, .form__title, .advantages__title{
 		font-family: SF Pro Display;
 		font-size: 32px;
 		font-weight: 500;
@@ -986,12 +1314,19 @@ input:focus {
 		font-weight: 500;
 	}
 
-	.subscribe__title{
+	.footer__button-name{
+		text-align: center;
+	}
+	.subscribe__title, .process__title{
 		font-size: 64px;
 	}
 
+	.process__title{
+		max-width: 338px;
+	}
+
 	.service__card{
-		max-height: 150px;
+		min-height: 300px;
 	}
 
 	.media__button {
@@ -1017,6 +1352,10 @@ input:focus {
 	transition: opacity 0.3s;
   }
 
+
+  .service__info{
+	display: block;
+}
   .modal__title, .modal__text{
 	display: flex;
 	max-width: 188px;
@@ -1036,4 +1375,106 @@ input:focus {
 	flex-direction: column;
 	gap: 40px;
   }
+
+  .header__logo{
+	max-width: 128px;
   }
+
+  .header{
+	padding: 26px 10px;
+}
+
+  .header__button{
+	padding: 12px 20px;
+	display: flex;
+	align-items: center;
+}
+
+  .header__button-arrow{
+	max-width: 16px;
+}
+.service__button{
+	padding: 8px 20px;
+	font-size: 12px;
+	border-radius: 8px;
+}
+
+.service__button svg{
+	max-width: 16px;
+}
+
+.service__description-last{
+	margin-bottom: 20px;
+}
+
+.fixed-block{
+	display: flex;
+}
+}
+
+@media(max-width:360px){
+	.main__description {
+		font-size: 12px;
+	}
+
+	.fixed__button{
+		max-width: 230px;
+		padding: 16px 0;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.main__title, .process__title {
+		font-size: 38px;
+	}
+
+	.advantages__title, .process__title{
+		font-size: 32px;
+	}
+
+	.process__title{
+		max-width: 195px;
+	}
+
+	.header__logo{
+		max-width: 88px;
+	}
+
+	.header__container{
+		padding: 15px 20px;
+	}
+
+	.main__text{
+		font-size: 14px;
+	}
+
+	.service__card{
+		min-height: 196px;
+	}
+
+	.advantages__icon-heart{
+		max-width: 112px;
+	}
+	
+	.advantages__icon-money{
+		max-width: 70px;
+	}
+
+	.service__description{
+		margin-bottom: 8px;
+	}
+
+	.service__title{
+		max-width: 218px;
+	}
+
+	.media__link svg{
+		max-width: 12px;
+	}
+
+	.media__link{
+		font-size: 16px;
+	}
+}
