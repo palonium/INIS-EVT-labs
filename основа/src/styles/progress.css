@@ -1,3 +1,6 @@
+  .ag-timeline-block{
+    display: none;
+  }
   .ag-timeline_item {
     margin: 0 0 50px;
   
@@ -185,6 +188,7 @@
         transform-origin: left;
         transform: scaleX(0);
         animation: strike-through 0.5s linear forwards;
+        animation-delay: 0.5s;
       }
 
       .active-text-decoration-second::before{
@@ -198,6 +202,11 @@
       .active-text-decoration-fourth::before{
         width: 165px;
       }
+
+      .progress__card-last, .progress__card-last p{
+        color: #FFF;
+      }
+
       
       @keyframes strike-through {
         0% {
@@ -208,6 +217,31 @@
         }
       }
 
+
+
+      @media(max-width: 800px){
+        .ag-timeline-block, .process__title{
+          display: block;
+        }
+      }
+
+      @media(max-width:600px){
+        .active-text-decoration::before{
+          width: 137px;
+        }
+  
+        .active-text-decoration-second::before{
+          width: 155px;
+        }
+  
+        .active-text-decoration-third::before{
+          width: 71px;
+        }
+  
+        .active-text-decoration-fourth::before{
+          width: 104px;
+        }
+      }
       @media(max-width: 599px){
         .active-text-decoration::before{
           width: 130px;
@@ -222,5 +256,9 @@
   
         .active-text-decoration-fourth::before{
           width: 110px;
+        }
+
+        .progress__card{
+          max-width: 393px;
         }
       }
